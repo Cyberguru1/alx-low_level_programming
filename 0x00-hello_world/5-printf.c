@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *new commit
- *
+ * main - Entry point
+ * Return: Always 0 (success)
  */
 int main(void)
 {
