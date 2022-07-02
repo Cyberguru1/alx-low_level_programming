@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * main -  prints the alphabet in lowercase, followed by a new line.
- * Return - 0 on sucess
- * descrption - returns all alphabets
+ * main - prints the alphabet in lowercase, followed by a new line.
+ * return - Always 0 (Success)
+ * 
  */
 int main(void)
 {
