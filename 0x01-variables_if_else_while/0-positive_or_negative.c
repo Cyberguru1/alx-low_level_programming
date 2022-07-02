@@ -2,10 +2,12 @@
 #include <stdio.h>
 #include <time.h>
 /**
- *main - assigns a random number to int n everytime
- *return - Always 0 on (Succes)
- * description - postive or negative
- * 
+ *main - assigns a random number to the variable n each time it is executed
+ *and prints out based on condition
+ *
+ *Return: Always 0 on (Succes)
+ *
+ *
  */
 int main(void)
 {
