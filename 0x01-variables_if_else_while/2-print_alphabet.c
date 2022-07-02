@@ -4,6 +4,7 @@
 /**
  * main - Entry point
  * Return - 0 on sucess
+ * descrption - returns all alphabets
  */
 int main(void)
 {
