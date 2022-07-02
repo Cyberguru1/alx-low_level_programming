@@ -3,7 +3,7 @@
 #include <time.h>
 /**
  *main - assigns a random number to int n everytime
- *Return - Always 0 on (Succes)
+ *return - Always 0 on (Succes)
  * description - postive or negative
  * 
  */
