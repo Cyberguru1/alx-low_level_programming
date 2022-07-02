@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * main - Entry point
+ * main -  prints the alphabet in lowercase, followed by a new line.
  * Return - 0 on sucess
  * descrption - returns all alphabets
  */
