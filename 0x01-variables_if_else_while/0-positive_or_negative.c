@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <time.h>
 /**
- *Main - Determine if a random number is positive, negative or zero.
+ *main - Determine if a random number is positive, negative or zero.
  *Return - 0 on succes
- *Description - postive or negative
- * it executes, and prints it
+ * description - postive or negative
+ *it executes, and prints it
  */
 int main(void)
 {
