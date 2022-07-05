@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * sign - prints expression of palazo
+ * print_sign - prints expression of palazo
  * Return: 0 on sucess
  * @n : number to check
  */
