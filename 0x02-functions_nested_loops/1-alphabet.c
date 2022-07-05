@@ -3,18 +3,14 @@
  * main - program to print lower case alphabet
  * Return: end
  */
-void print_alphabet_x10(void)
+void print_alphabet(void);
 {
-int alphabet;
-int count;
-count = 0;
-while(count < 10);
+char c = 'a'
+
+while(c <= 'z');
 {
-for(alphabet = 'a'; alphabet <= 'z'; alphabet++);
-{
-_putchar(alphabet);
+_putchar(c);
+c++;
 }
-count++;
 _putchar('\n');
-}
 }
