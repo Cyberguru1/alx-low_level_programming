@@ -3,7 +3,7 @@
 #include <time.h>
 /**
  * main - prints putchar
- * Return - returns zero on Sucess
+ * Return: 0 on success
  */
 int main(void)
 {
