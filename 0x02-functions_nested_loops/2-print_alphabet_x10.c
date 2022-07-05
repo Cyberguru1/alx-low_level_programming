@@ -2,7 +2,7 @@
 /**
  * manin - check the code
  * Return: 0 on sucess
- * print_alphabet_x10 - prints alphabet ten times
+ * print_alphabet_x10 - prints alphabet 10 times
  */
 void print_alphabet_x10(void)
 {
