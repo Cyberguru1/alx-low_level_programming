@@ -1,18 +1,13 @@
 #include "main.h"
+
 /**
- * _islower- program to check for lower palazo
- *  @c: contains value
- *  Retrun: 0 on palazo
- *  (code by cyberguru)
+ * _islower - check for lower case letter
+ * @c : character to check the case
+ * Return:0 or 1
  */
+
 int _islower(int c)
 {
-if (c > 'a' && c < 'z')
-{
-return (1);
-}
-else
-{
-return (0);
-}
+	return (c >= 97 && c <= 122);
+
 }
