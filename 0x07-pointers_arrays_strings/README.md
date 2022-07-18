@@ -1,6 +1,6 @@
 ## More Arrays pointer and strings
 ## 0 -Memeset set a memory address
---- 1 -memcpy copy a memory area to another address
+-- 1 -memcpy copy a memory area to another address
 ## 2 -strchr finds a char in a string
 ## 3 -strspn returns len of a string
 ## 4 -strpbrk returns a divided string from a particular index
