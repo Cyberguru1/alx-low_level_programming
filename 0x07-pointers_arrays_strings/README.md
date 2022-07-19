@@ -9,3 +9,4 @@
 ## 7 -print_diagsums return a sum of diagonals of a matrix
 ## 8 -set_string sets value of a pointer to a char
 ## 101 -Crackme_password: performing reverse engineering with respect to the strcmp(hash, password)
+## 100- Set_string: setting a pointing pointer to another char
