@@ -25,12 +25,11 @@ return (n);
 int is_palindrome(char *s)
 {
 int end = last_index(s);
-
 return (check(s, 0, end - 1, end % 2));
 }
 
 /**
- * check - checker for the palindrome
+
  * @s: string
  * @start: int moves from right to left
  * @end: int moves from left to right
