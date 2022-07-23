@@ -1,1 +1,2 @@
-##0. A library is not a luxury but one of the necessities of life
+#0. Make a library with functions 
+#1. Create a static library
