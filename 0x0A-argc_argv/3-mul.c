@@ -1,26 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - multiplies two numbers
+ * main - prints all arguments it receives, one per line
  * @argc: number of commandline arguments
  * @argv: list of commandline arguments
  *
- * Description:
- * If the program does not receive two arguments,
- * your program should print Error, followed by a new line, and return 1
- *
- * Return: 0 if successful. 1 if error
+ * Return: 0 Always(success)
  */
 int main(int argc, char **argv)
 {
-	if (argc != 3)
-	{
-		printf("Error\n");
-		return (1);
-	}
+	int i;
 
-	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	for (i = 0; i < argc; i++)
+		printf("%s\n", argv[i]);
 
 	return (0);
 }
