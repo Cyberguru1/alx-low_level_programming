@@ -10,19 +10,17 @@
  */
 char *_strdup(char *str)
 {
+	int i, size, c;
+	char *buff;
+
+		
 	if (str == NULL)
 	{
 		return ('\0');
 	}
 
 
-	int size;
-
-	int c;
-
-	char *buff;
-
-
+	
 	i = 0;
 	size = 0;
 
