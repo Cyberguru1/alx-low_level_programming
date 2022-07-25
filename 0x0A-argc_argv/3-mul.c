@@ -15,9 +15,9 @@
  */
 int main(int argc, char **argv)
 {
-	int i;
 
-	if (argv[1] && argv[2])
+
+	if (argc == 3)
 	{
 		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	}
