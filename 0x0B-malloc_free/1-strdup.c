@@ -14,9 +14,13 @@ char *_strdup(char *str)
 	{
 		return ('\0');
 	}
+
 	int i;
+
 	int size;
+
 	int c;
+
 	char *buff;
 
 
@@ -40,7 +44,7 @@ char *_strdup(char *str)
 		i++;
 	}
 	
-	buff[i++] = '\9';
+	buff[i++] = '\0';
 
 	return (buff);
 }
