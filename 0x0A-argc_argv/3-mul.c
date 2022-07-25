@@ -13,13 +13,11 @@ int main(int argc, char **argv)
 
 	if (argv[1] && argv[2])
 	{
-		i = argv[1] * argv[2];
-		_putchar(i);
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	}
 	else
 	{
-		_putchar("Error");
-		_putchar('\n');
+		printf("Error\n");
 		return (1);
 	}
 	return (0);
