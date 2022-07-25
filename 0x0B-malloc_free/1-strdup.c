@@ -10,13 +10,16 @@
  */
 char *_strdup(char *str)
 {
-	if (str == NULL || str == '\0')
+	if (str == NULL)
 	{
 		return ('\0');
 	}
-	int i = 0, size = 0, c;
+	int i, size, c;
+	i = 0;
+	size = 0;
 
-	for (c = 0; str[c] != NULL; c++)
+
+	for (c = 0; str[c] != '\0'; c++)
 	{
 		size++;
 	}
