@@ -11,15 +11,17 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char  buff = malloc(sizeof(char) * size);
+	char *buff = malloc(sizeof(char) * size);
+	unsigned int i;
+
 
 	if (buff == 0 || size == 0)
 		return ('\0');
 
 	for (unsigned int i; i < size; i++)
 	{
-		*buff[i] = c;
+		buff[i] = c;
 	}
 
-	return (*buff);
+	return (buff);
 }
