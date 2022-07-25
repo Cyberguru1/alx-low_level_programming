@@ -29,7 +29,9 @@ char *_strdup(char *str)
 		size++;
 	}
 
-	*buff = malloc(sizeof(char) * size);
+	buff =  malloc(sizeof(char) * (size + 1));
+
+	
 
 
 	while (str[i] != '\0')
@@ -37,5 +39,8 @@ char *_strdup(char *str)
 		buff[i] = str[i];
 		i++;
 	}
+	
+	buff[i++] = '\9';
+
 	return (buff);
 }
