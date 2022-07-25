@@ -1,11 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 
 /**
- * main - prints all arguments it receives, one per line
+ * main - multiplies two arguments
  * @argc: number of commandline arguments
  * @argv: list of commandline arguments
  *
- * Return: 0 Always(success)
+ * Description:
+ * If the program does not receive two arguments.
+ * your program should print Error, follwed by a new line, and return 1
+ *
+ * Return: 0 Always(success) and  1 if error
  */
 int main(int argc, char **argv)
 {
