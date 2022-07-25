@@ -9,13 +9,10 @@
  * Return: returns null if size = 0 or pointer to the array
  */
 
-char *create_array(unsigned int size, char c);
-
-
-if (size == 0)
-
-	return ('\0');
-
-char arra[size] = {c};
-
-return (*arra);
+char *create_array(unsigned int size, char c)
+{
+	if (size == 0)
+		return ('\0');
+	char arra[size] = {c};
+	return (*arra);
+}
