@@ -3,20 +3,26 @@
 #include <stdio.h>
 
 /**
- * _strdup - returns a pointer to a newly allocated space 
+ * _strdup - returns a pointer to a newly allocated space
  * @str: string to allocate
- * Return: returns null if str is null else a pointer to 
+ * Return: returns null if str is null else a pointer to
  * the duplicate str
  */
 char *_strdup(char *str)
 {
-	if (*str == NULL || *str =='\0')
+	if (str == NULL || str == '\0')
 	{
 		return ('\0');
 	}
+	int i = 0, size = 0, c;
 
-	char *buff = malloc(sizeof(str) / sizeof(char));
-	int i = 0;
+	for (c = 0; str[c] != NULL; c++)
+	{
+		size++;
+	}
+
+	char *buff = malloc(sizeof(char) * size);
+
 
 	while (str[i] != '\0')
 	{
