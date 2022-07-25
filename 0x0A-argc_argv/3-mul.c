@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	else
 	{
 		_putchar("Error");
-	        _putchar('\n');
+		_putchar('\n');
 		return (1);
 	}
 	return (0);
