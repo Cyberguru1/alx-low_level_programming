@@ -18,7 +18,7 @@ char *create_array(unsigned int size, char c)
 	if (buff == 0 || size == 0)
 		return ('\0');
 
-	for (unsigned int i; i < size; i++)
+	for (i; i < size; i++)
 	{
 		buff[i] = c;
 	}
