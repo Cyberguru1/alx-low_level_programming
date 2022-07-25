@@ -11,8 +11,16 @@ int main(int argc, char **argv)
 {
 	int i;
 
-	for (i = 0; i < argc; i++)
-		printf("%s\n", argv[i]);
-
+	if (argv[1] && argv[2])
+	{
+		i = argv[1] * argv[2];
+		_putchar(i);
+	}
+	else
+	{
+		_putchar("Error");
+	        _putchar('\n');
+		return (1);
+	}
 	return (0);
 }
