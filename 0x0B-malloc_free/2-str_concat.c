@@ -30,21 +30,20 @@ char *str_concat(char *s1, char *s2)
 	{
 		words++;
 		s2++;
-		f++;
 	}
 
 
 	buff  =  malloc(sizeof(char) * (words + 2));
 
 
-	for (n = 0; n < words + 1; n++)
+	for (n = 0; n < i; n++)
 	{
-		if (n == i)
-			buff[n] = ' ';
-		if (s1[n] != '\0')
-			buff[n] = s1[n];
-		buff[n] = s2[n];
+		buff[n] = s1[n];
 	}
+	buff[i] = ' ';
+	for (n = 0; n < f; n++)
+		buff[n] = s2[n];
+
 	buff[words + 1] = '\0';
 	return (buff);
 
