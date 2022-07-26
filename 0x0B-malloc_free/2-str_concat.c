@@ -11,7 +11,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int word1 = 0, word2 = 0, n;
+	int word1 = 0, word2 = 0, n, i = 0;
 	char *buff;
 
 	if (s2 == NULL || s1 == NULL)
@@ -37,14 +37,14 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 
-	for (n = 0; n < word1; n++)
+	for (n = 0; n < word1; n++, i++)
 	{
-		buff[n] = s1[n];
+		buff[i] = s1[n];
 	}
-	for (n = 0; n < word2; n++)
-		buff[n] = s2[n];
+	for (n = 0; n < word2; n++, i++)
+		buff[i] = s2[n];
 
-	buff[word1 + word2] = '\0';
+	buff[i] = '\0';
 	return (buff);
 
 }
