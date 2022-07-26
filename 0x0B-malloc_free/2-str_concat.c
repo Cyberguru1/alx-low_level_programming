@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		buff[n] = s1[n];
 	}
-	buff[i] = ' ';
+	
 	for (n = 0; n < f; n++)
 		buff[n] = s2[n];
 
