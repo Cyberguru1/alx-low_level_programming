@@ -11,7 +11,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, words = 0, f = 0, n;
+	int i = 0, word1 = 0, word2 = 0, n;
 	char *buff;
 
 	if (s2 == NULL || s1 == NULL)
@@ -21,30 +21,30 @@ char *str_concat(char *s1, char *s2)
 
 	while (*s1)
 	{
-		words++;
-		i++;
+		word1++;
 		s1++;
 	}
 
 	while (*s2)
 	{
-		words++;
+		word2++;
 		s2++;
 	}
 
 
-	buff  =  malloc(sizeof(char) * (words + 2));
+	buff  =  malloc(sizeof(char) * (word1 + word2 + 1));
+	if (buff == NULL)
+		return (NULL);
 
 
-	for (n = 0; n < i; n++)
+	for (n = 0; n < word1; n++)
 	{
 		buff[n] = s1[n];
 	}
-	
-	for (n = 0; n < f; n++)
+	for (n = 0; n < word2; n++)
 		buff[n] = s2[n];
 
-	buff[words + 1] = '\0';
+	buff[word1 + word2] = '\0';
 	return (buff);
 
 }
