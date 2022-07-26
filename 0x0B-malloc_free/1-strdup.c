@@ -33,7 +33,7 @@ char *_strdup(char *str)
 	buff =  malloc(sizeof(char) * (size + 1));
 
 
-	while (str[i] != '\0')
+	while (i < size)
 	{
 		buff[i] = str[i];
 		i++;
