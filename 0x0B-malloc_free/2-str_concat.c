@@ -36,6 +36,11 @@ char *str_concat(char *s1, char *s2)
 	return (buff);
 
 }
+/**
+ * _strlen1 - returns the length of a passend string
+ * @s: string to be passed
+ * Return: returns length of sting
+ */
 
 int _strlen1(char *s)
 {
