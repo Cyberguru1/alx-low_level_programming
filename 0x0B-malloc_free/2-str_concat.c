@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stddef.h>
+int _strlen1(char *s);
+
 /**
  * str_concat - function that concatenates the content of the input string
  * @s1: first string
  * @s2: second string
  * Return: returns NuLL if an empty string is passed or falilure
  */
-
-int _strlen1(char *s);
 
 char *str_concat(char *s1, char *s2)
 {
@@ -36,9 +36,11 @@ char *str_concat(char *s1, char *s2)
 	return (buff);
 
 }
+
 /**
  * _strlen1 - returns the length of a passend string
  * @s: string to be passed
+ *
  * Return: returns length of sting
  */
 
