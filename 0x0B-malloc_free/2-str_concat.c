@@ -9,6 +9,7 @@
  * Return: returns NuLL if an empty string is passed or falilure
  */
 
+int _strlen1(char *s)
 char *str_concat(char *s1, char *s2)
 {
 	int i1, i2, word1 = 0, word2 = 0, n, i = 0;
@@ -46,11 +47,11 @@ char *str_concat(char *s1, char *s2)
 
 }
 
-int _strlen1(char *s1)
+int _strlen1(char *s)
 {
 	int len = 0;
 
-	while (*s1)
+	while (*s)
 	{
 		len++;
 		s1++;
