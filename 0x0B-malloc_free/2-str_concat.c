@@ -14,10 +14,9 @@ char *str_concat(char *s1, char *s2)
 	int i1, i2, word1 = 0, word2 = 0, n, i = 0;
 	char *buff;
 
-	if (s2 == NULL || s1 == NULL)
-	{
-		return (NULL);
-	}
+	word1 = s1 == NULL ? 0 : _strlen1(s1);
+	word2 = s2 == NULL ? 0 : _strlen1(s2);
+
 
 	for (i1 = 0; s1[i1] != '\0'; i1++)
 	{
@@ -45,4 +44,16 @@ char *str_concat(char *s1, char *s2)
 	buff[i] = '\0';
 	return (buff);
 
+}
+
+int _strlen1(char *s1)
+{
+	int len = 0;
+
+	while (*s1)
+	{
+		len++;
+		s1++;
+	}
+	return (len);
 }
