@@ -13,14 +13,14 @@ char *_strdup(char *str)
 	int i, size, c;
 	char *buff;
 
-		
+
 	if (str == NULL)
 	{
 		return ('\0');
 	}
 
 
-	
+
 	i = 0;
 	size = 0;
 
@@ -30,15 +30,15 @@ char *_strdup(char *str)
 		size++;
 	}
 
-	buff =  malloc(sizeof(char) * (size + 1))
-	
+	buff =  malloc(sizeof(char) * (size + 1));
+
 
 	while (str[i] != '\0')
 	{
 		buff[i] = str[i];
 		i++;
 	}
-	
+
 	buff[i++] = '\0';
 
 	return (buff);
