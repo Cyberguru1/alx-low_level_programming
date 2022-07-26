@@ -11,7 +11,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int word1 = 0, word2 = 0, n, i = 0;
+	int i1, i2, word1 = 0, word2 = 0, n, i = 0;
 	char *buff;
 
 	if (s2 == NULL || s1 == NULL)
@@ -19,16 +19,14 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	while (*s1)
+	for (i1 = 0; s1[i1] != '\0'; i1++)
 	{
 		word1++;
-		s1++;
 	}
 
-	while (*s2)
+	for (i2 = 0; s2[i2]; i2++)
 	{
 		word2++;
-		s2++;
 	}
 
 
