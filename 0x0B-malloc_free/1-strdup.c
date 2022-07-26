@@ -30,9 +30,7 @@ char *_strdup(char *str)
 		size++;
 	}
 
-	buff =  malloc(sizeof(char) * (size + 1));
-
-	int i;
+	buff =  malloc(sizeof(char) * (size + 1))
 	
 
 	while (str[i] != '\0')
