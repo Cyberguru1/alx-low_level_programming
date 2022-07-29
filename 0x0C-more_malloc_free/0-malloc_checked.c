@@ -8,7 +8,7 @@
  * Return: a pointer to the allocated memory
  */
 
-void *malloc_checked(unsignded int b)
+void *malloc_checked(unsigned int b)
 {
 	int *ptr;
 
