@@ -1,8 +1,8 @@
 #ifndef DOG_H
 #define DOG_H
-/**
+/*
  * File: dog.h
- * 
+ *
  *
  * Desc: Header File that defines a new type struct dog.
  */
