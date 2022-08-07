@@ -4,6 +4,7 @@
  * @size: size of the array.
  * @cmp: pointer to function
  * @array: array of values.
+ * Return: returns -1 if size <= 0, 0 if null inpu
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
