@@ -22,4 +22,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 		i++;
 		array++;
 	}
+	return (0);
 }
