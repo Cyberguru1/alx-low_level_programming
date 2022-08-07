@@ -1,7 +1,4 @@
 #include "function_pointers.h"
-#include <stdio.h>
-#include <stdlib.h>
-
 /**
  * array_iteratot - function that returns an array of input
  * @array: array of params
