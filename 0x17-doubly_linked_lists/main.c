@@ -30,7 +30,7 @@ int main(void)
     head->prev = new2;
     new2->prev = NULL;
     head = new2;
-    n = print_dlistint(head);
+    n = dlistint_len(head);
     printf("-> %lu elements\n", n);
     free(new);
     free(new2);  
