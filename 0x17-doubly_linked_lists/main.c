@@ -8,32 +8,17 @@
 int main(void)
 {
     dlistint_t *head;
-    dlistint_t *new;
-    dlistint_t hello = {8, NULL, NULL};
-    size_t n;
 
-    head = &hello;
-    new = malloc(sizeof(dlistint_t));
-    if (new == NULL)
-    {
-        dprintf(2, "Error: Can't malloc\n");
-        return (EXIT_FAILURE);
-    }
-    new->n = 9;
-    head->prev = new;
-    new->next = head;
-    new->prev = NULL;
-    head = new;
-    dlistint_t *new2 = (dlistint_t *)malloc(sizeof(dlistint_t));
-    new2->n = 4;
-    new2->next = head;
-    head->prev = new2;
-    new2->prev = NULL;
-    head = new2;
-    n = dlistint_len(head);
-    printf("-> %lu elements\n", n);
-    free(new);
-    free(new2);  
 
+    head = NULL;
+    add_dnodeint(&head, 0);
+    add_dnodeint(&head, 1);
+    add_dnodeint(&head, 2);
+    add_dnodeint(&head, 3);
+    add_dnodeint(&head, 4);
+    add_dnodeint(&head, 98);
+    add_dnodeint(&head, 402);
+    add_dnodeint(&head, 1024);
+    print_dlistint(head);
     return (EXIT_SUCCESS);
 }
