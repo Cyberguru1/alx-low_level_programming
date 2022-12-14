@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
+
+
 """ Defines a functions that finds the perimeter of island """
 
 
