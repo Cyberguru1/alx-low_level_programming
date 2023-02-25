@@ -16,9 +16,9 @@
 
 typedef struct listint_s
 {
-    int n;
-    size_t index;
-    struct listint_s *point_next;
+	int n;
+	size_t index;
+	struct listint_s *point_next;
 } listint_t;
 
 /**
@@ -33,10 +33,10 @@ typedef struct listint_s
  */
 typedef struct skiplist_s
 {
-    int n;
-    size_t index;
-    struct skiplist_s *point_next;
-    struct skiplist_s *express;
+	int n;
+	size_t index;
+	struct skiplist_s *point_next;
+	struct skiplist_s *express;
 } skiplist_t;
 
 int linear_search(int *array, size_t size, int value);
