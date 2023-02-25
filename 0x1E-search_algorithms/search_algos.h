@@ -9,7 +9,6 @@
  * @n: Integer
  * @index: Index of the node in the list
  * @point_next: Pointer to the next node
- * 
  * Descrpiton: singly linked list node structure
  * for holberton project
  */
@@ -27,7 +26,6 @@ typedef struct listint_s
  * @index: Index of the node
  * @point_next: Pointer to next node
  * @express: Poiter to the next node in teh express lane
- * 
  * DEscrption: Singly linked list structure with an express lane
  * for alx project
  */
