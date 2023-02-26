@@ -18,7 +18,7 @@ int interpolation_search(int *array, size_t size, int value)
 	l = 0;
 	h = size - 1;
 
-	while (size
+	while (size)
 	{
 		mid = (double)(h - l) / (array[h] - array[l]) * (value - array[l]);
 		pos = (size_t)(l + mid);
