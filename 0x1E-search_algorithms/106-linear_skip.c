@@ -26,19 +26,19 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 	if (go->express == NULL)
 	{
 		list = go;
-		while (go->point_next)
-			go = go->point_next;
+		while (go->next)
+			go = go->next;
 	}
 
 	printf("Value found between indexes ");
 	printf("[%d] and [%d]\n", (int)list->index, (int)go->index);
 
-	while (list != go->point_next)
+	while (list != go->next)
 	{
 		printf("Value checked at index [%d] = [%d]\n", (int)list->index, list->n);
 		if (list->n == value)
 			return (list);
-		list = list->point_next;
+		list = list->next;
 	}
 
 	return (NULL);
